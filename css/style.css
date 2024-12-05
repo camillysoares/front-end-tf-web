@@ -65,3 +65,46 @@ body {
   font-family: "Lavishly Yours", cursive;
 }
 
+/* ------------------ CASAL --------------------*/
+
+.title_section {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 0%;
+  margin: 1% 0% 1% 0%;
+}
+
+#container_img_casal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img_casal {
+  width: 35%;
+  margin: 2%;
+}
+
+#text_casal {
+  width: 60%;
+  padding: 0%;
+  margin: 2% 0% 0% 0%;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.cotainer_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px #c4a601;
+  margin-top: 4%;
+}
+
+.logo {
+  width: 5%;
+}
+
