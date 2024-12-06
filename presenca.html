@@ -3,10 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>camilly & Evelyn</title>
+  <title>Camilly & Evelyn</title>
 </head>
 <body>
+  <section class="container">
+    <div class="container_navbar">
+      <ul class="menu">
+        <li class="item_menu"><a class="link_menu" href="index.html">Home</a></li>
+        <li class="item_menu"><a class="link_menu" href="casal.html">O Casal</a></li>
+        <li class="item_menu"><a class="link_menu" href="local.html">Local</a></li>
+        <li class="item_menu"><a class="link_menu" href="presentes.html">Lista de Presentes</a></li>
+        <li class="item_menu"><a class="link_menu active" href="presenca.html">Confirme Sua Presença</a></li>
+        <li class="item_menu"><a class="link_menu" href="avisos.html">Avisos</a></li>
+      </ul>
+    </div>
+
+    <h2 class="title_section">Confirme sua Presença</h2>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nome-completo">Nome completo</label>
+        <input type="text" id="nome-completo" name="nome-completo" placeholder="insira seu nome completo" required>
+      </div>
+    
+      <div class="form-group">
+        <label>Você irá ao evento?</label>
+        <div id="container_radio">
+          <input type="radio" id="sim" name="evento" value="sim" class="option_radio">
+          <label for="sim" class="text_radio">Sim</label>
+          <input type="radio" id="nao" name="evento" value="nao" class="option_radio">
+          <label for="nao" class="text_radio">Não</label>    
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="qtd-adultos" class="label_qtd">quantidades de adultos incluindo você</label>
+        <input type="number" id="qtd-adultos" name="qtd-adultos" placeholder="0" min="1">
+      </div>
+
+      <div class="form-group">
+        <label for="qtd-crianca" class="label_qtd">Quantidade de Crianças</label>
+        <input type="number" id="qtd-crianca" name="qtd-crianca" placeholder="0" min="1">
+      </div>
+    
+      <div class="form-group">
+        <div id="container_text_email">
+          <label for="email">E-mail:</label>
+          <p id="info_email">Você receberá a confirmação de presença neste e-mail</p>
+        </div>
+        <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone para contato</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11)99999-9999">
+      </div>
+
+      <div class="form-group">
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" name="observacoes" rows="1" ></textarea>
+      </div>
+
+      <div id="container_btn">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <div class="cotainer_logo" style="margin-top: 2%;">
+      <img class="logo" src="images/logo.png" alt="logo">
+    </div>
+  </section>
   
 </body>
 </html>
