@@ -324,3 +324,53 @@ input::placeholder, textarea::placeholder{
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* ----------------- AVIOSOS ------------------- */
+
+#content_avisos {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.list_container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#list_ol_avisos {
+  margin: 0%;
+}
+
+.item_ol_avisos {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 0.99rem;
+  line-height: 1.3;
+  width: 100%;
+
+}
+
+.list_ul_avisos {
+  list-style-type: disc;
+  padding: 0% 0% 0% 3%;
+}
+
+.item_ul_avisos {
+  width: 85%;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 4%;
+  text-align: justify;
+}
+
+.item_ul_avisos::marker {
+  font-size: 1.1rem;
+}
+
